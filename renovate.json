@@ -1,4 +1,25 @@
 {
-  "schedule": ["0 15 * * *"],
-  "timeZone": "Asia/Kolkata"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"  // Base recommended config
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "mcr.microsoft.com/dotnet/sdk",
+        "mcr.microsoft.com/dotnet/aspnet"
+      ],
+      "versioning": "docker",
+      "groupName": "dotnet-docker-images",
+      "schedule": ["on the first day of the month"]  // Control PR frequency
+    },
+    {
+      "matchUpdateTypes": ["patch"],
+      "automerge": true  // Auto-merge minor patches (optional)
+    }
+  ],
+  "labels": ["dependencies"],
+  "prHourlyLimit": 2,    // Prevent PR spam
+  "prConcurrentLimit": 5
 }
