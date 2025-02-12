@@ -16,7 +16,7 @@
             "versioning": "docker",
             "groupName": "dotnet-docker-images",
             "schedule": [
-                "* 0-4,15-16 * * *"
+                "* 0-4,16 * * *"
             ]
         },
         {
