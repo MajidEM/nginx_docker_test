@@ -15,7 +15,7 @@
             "versioning": "docker",
             "groupName": "dotnet-docker-images",
             "schedule": [
-                "on the first day of the month"
+                "* *,20-21 * * *"
             ]
         },
         {
