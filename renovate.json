@@ -16,7 +16,7 @@
             "versioning": "docker",
             "groupName": "dotnet-docker-images",
             "schedule": [
-                "after 3:00pm every weekday"
+                "after 4:15pm every weekday"
             ]
         },
         {
