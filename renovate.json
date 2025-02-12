@@ -1,6 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "timezone": "Asia/Calcutta",
-    "description": "Schedule daily before 4 AM",
-    "schedule": ["* 0-18 * * *"]    
+    "description": "Schedule daily before 8:30 PM IST",
+    "schedule": ["30 20 * * *"]  
 }
